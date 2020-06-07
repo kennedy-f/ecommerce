@@ -13,8 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('admin/pages/dashboard');
+// });
 Route::get('/', function () {
-    return view('admin/pages/dashboard');
+    return view('site/layouts/app');
 });
 
 Auth::routes();
