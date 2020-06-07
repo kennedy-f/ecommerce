@@ -15,9 +15,8 @@
             </a>
         </div>
         <!-- //image logo -->
-
         <div class="logo-icon text-center">
-            <a href="index.html" title="logo"><img src="images/logo.png" alt="logo-icon"> </a>
+            <a href="index.html" title="logo"><img src="/images/logo.png" alt="logo-icon"> </a>
         </div>
         <!-- //logo end -->
 
@@ -25,8 +24,8 @@
 
             <!-- sidebar nav start -->
             <ul class="nav nav-pills nav-stacked custom-nav">
-                <li class="active">
-                    <a href="index.html">
+                <li class="{{ $menu === 'dashboard' ? "active" : ''}}">
+                    <a href="{{ route('admin.dashboard') }}">
                         <i class="fas fa-tachometer-alt"></i>
                         <span> Dashboard</span>
                     </a>
@@ -60,8 +59,8 @@
                 <!-- //sidebar nav end -->
                 <!-- toggle button start -->
             <a class="toggle-btn">
-                <i class="fa fa-angle-double-left menu-collapsed__left"><span>Collapse Sidebar</span></i>
-                <i class="fa fa-angle-double-right menu-collapsed__right"></i>
+                <i class="fas fa-angle-double-left menu-collapsed__left"><span>Collapse Sidebar</span></i>
+                <i class="fas fa-angle-double-right menu-collapsed__right"></i>
             </a>
             <!-- //toggle button end -->
         </div>

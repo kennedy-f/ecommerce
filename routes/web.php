@@ -16,10 +16,14 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('admin/pages/dashboard');
 // });
-Route::get('/', function () {
-    return view('site/layouts/app');
+// Route::get('/', 'Admin\DashboardController@index');
+Route::prefix('admin')->group(function () {
+    Route::name('admin.')->group(function() {
+        Route::get('/dashboard', 'Admin\DashboardController@index')->name('dashboard');
+    });
 });
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes();
+Route::get('/', 'Site\DashboardController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');

@@ -13,14 +13,14 @@ Author URL: http://w3layouts.com
     <title>@yield('title')</title>
 
     <!-- Template CSS -->
-    <link rel="stylesheet" href="css/style-starter.css">
+    <link rel="stylesheet" href="/css/style-starter.css">
 
     <!-- google fonts -->
     <link href="//fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
 </head>
 
 <body class="sidebar-menu-collapsed">
-    <div class="se-pre-con"></div>
+    {{-- <div class="se-pre-con"></div> <!-- Animacao de loading  --> --}}
     <section>
 
         @include('admin/layouts/sidebar-menu')
@@ -74,22 +74,22 @@ Author URL: http://w3layouts.com
     <!-- /move top -->
 
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/jquery-1.10.2.min.js"></script>
 
     <!-- chart js -->
-    <script src="js/Chart.min.js"></script>
-    <script src="js/utils.js"></script>
+    <script src="/js/Chart.min.js"></script>
+    <script src="/js/utils.js"></script>
     <!-- //chart js -->
 
     <!-- Different scripts of charts.  Ex.Barchart, Linechart -->
-    <script src="js/bar.js"></script>
-    <script src="js/linechart.js"></script>
+    <script src="/js/bar.js"></script>
+    <script src="/js/linechart.js"></script>
     <!-- //Different scripts of charts.  Ex.Barchart, Linechart -->
 
 
-    <script src="js/jquery.nicescroll.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="/js/jquery.nicescroll.js"></script>
+    <script src="/js/scripts.js"></script>
 
     <!-- close script -->
     <script>
@@ -114,7 +114,7 @@ Author URL: http://w3layouts.com
     </script>
     <!-- disable body scroll when navbar is in active -->
 
-    <!-- loading-gif Js -->
+    {{-- <!-- loading-gif Js -->
     <script src="/js/modernizr.js"></script>
     <script>
         $(window).load(function () {
@@ -122,7 +122,7 @@ Author URL: http://w3layouts.com
             $(".se-pre-con").fadeOut("slow");;
         });
     </script>
-    <!--// loading-gif Js -->
+    <!--// loading-gif Js --> --}}
 
     <!-- Bootstrap Core JavaScript -->
     <script src="/js/bootstrap.min.js"></script>

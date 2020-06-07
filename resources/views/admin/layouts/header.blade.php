@@ -23,21 +23,21 @@
                   </div>
                 </li>
                 <li><a href="#" class="grid">
-                    <div class="user_img"><img src="assets/images/avatar1.jpg" alt=""></div>
+                    <div class="user_img"><img src="/assets/images/avatar1.jpg" alt=""></div>
                     <div class="notification_desc">
                       <p>Johnson purchased template</p>
                       <span>Just Now</span>
                     </div>
                   </a></li>
                 <li class="odd"><a href="#" class="grid">
-                    <div class="user_img"><img src="assets/images/avatar2.jpg" alt=""></div>
+                    <div class="user_img"><img src="/assets/images/avatar2.jpg" alt=""></div>
                     <div class="notification_desc">
                       <p>New customer registered </p>
                       <span>1 hour ago</span>
                     </div>
                   </a></li>
                 <li><a href="#" class="grid">
-                    <div class="user_img"><img src="assets/images/avatar3.jpg" alt=""></div>
+                    <div class="user_img"><img src="/assets/images/avatar3.jpg" alt=""></div>
                     <div class="notification_desc">
                       <p>Lorem ipsum dolor sit amet </p>
                       <span>2 hours ago</span>
@@ -58,7 +58,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3" aria-haspopup="true"
                 aria-expanded="false">
                 <div class="profile_img">
-                  <img src="assets/images/profileimg.jpg" class="rounded-circle" alt="" />
+                  <img src="/assets/images/profileimg.jpg" class="rounded-circle" alt="" />
                   <div class="user-active">
                     <span></span>
                   </div>
