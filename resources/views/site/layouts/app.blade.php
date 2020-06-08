@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 
 <head>
-    <title>Youth Fashion A Ecommerce Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+    <title>@yield('title')</title>
     <link href="/css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="/js/jquery.min.js"></script>
