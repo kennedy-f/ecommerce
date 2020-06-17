@@ -1,12 +1,14 @@
 <?php
 
-namespace App\Http\Admin\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Models\Client;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ClientController extends Controller
 {
+    public $data = [];
     /**
      * Display a listing of the resource.
      *
@@ -14,9 +16,8 @@ class ClientController extends Controller
      */
     public function index()
     {
-        $data = [];
-        $data['clients'] = Client::paginate(15);
-        return view('admin\pages\client\index');
+        $this->data['clients'] = Client::paginate(8);
+        return view('admin\pages\client\index',$this->data);
     }
 
     /**

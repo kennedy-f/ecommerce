@@ -24,8 +24,8 @@
 
             <!-- sidebar nav start -->
             <ul class="nav nav-pills nav-stacked custom-nav">
-                <li class="{{ $menu === 'dashboard' ? "active" : ''}}">
-                    <a href="{{ route('admin.dashboard') }}">
+                <li class="active">
+                    <a href="{{ route('dashboard') }}">
                         <i class="fas fa-tachometer-alt"></i>
                         <span> Dashboard</span>
                     </a>

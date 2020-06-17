@@ -10,7 +10,7 @@ $factory->define(Client::class, function (Faker $faker) {
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
         'password' => $faker->md5,
-        'cpf' => Str::random(14),
+        'cpf' => '123.456.789-02',
         'telephone' => Str::random(15),
     ];
 });
