@@ -22,8 +22,13 @@ Route::prefix('admin')->group(function () {
         Route::get('/dashboard', 'Admin\DashboardController@index')->name('dashboard');
     });
 });
+Route::prefix('/')->group(function() {
+    Route::name('site.')->group(function() {
+        Route::get('/', 'Site\HomeController@index')->name('home');
+    });
+});
 
 
-Auth::routes();
-Route::get('/', 'Site\DashboardController@index')->name('home');
+// Auth::routes();
+// Route::get('/', 'Site\DashboardController@index')->name('home');
 // Route::get('/home', 'HomeController@index')->name('home');
