@@ -1367,6 +1367,11 @@ pre {
   background-color: #343a40;
   border-color: #454d55; }
 
+.table .thead-blue th {
+  color: #fff;
+  background-color: #4755ab;
+  border-color: #4755ab; }
+  
 .table .thead-light th {
   color: #495057;
   background-color: #e9ecef;
@@ -5625,6 +5630,9 @@ button.bg-dark:focus {
 
 .min-vw-100 {
   min-width: 100vw !important; }
+
+.min-vh-85 {
+  min-height: 85vh !important; }
 
 .min-vh-100 {
   min-height: 100vh !important; }

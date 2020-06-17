@@ -30,7 +30,7 @@ Author URL: http://w3layouts.com
         <!-- main content start -->
         <div class="main-content">
             <!-- content -->
-            <div class="container-fluid content-top-gap">
+            <div class="container-fluid content-top-gap min-vh-85">
 
                 <!-- // Breadc  umb -->
                 @yield('breadcrumb')

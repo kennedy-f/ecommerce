@@ -13,14 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('admin/pages/dashboard');
-// });
-// Route::get('/', 'Admin\DashboardController@index');
-Route::prefix('admin')->group(function () {
-    Route::name('admin.')->group(function() {
-        Route::get('/dashboard', 'Admin\DashboardController@index')->name('dashboard');
-    });
+Route::group([
+    'prefix' => 'admin',
+    'name' => 'admin',
+    'namespace' => 'Admin',
+], function () {
+    
+    Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+
+    Route::resource('client', 'ClientController');
 });
 
 
