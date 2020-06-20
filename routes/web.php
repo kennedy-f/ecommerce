@@ -43,5 +43,9 @@ Route::group([
     
     Route::resource('client', 'ClientController');
 });
-
-
+Route::prefix('/')->group(function() {
+    Route::name('site.')->group(function() {
+        Route::get('/', 'Site\HomeController@index')->name('home');
+        Route::get('/cart/add/{id}', 'Site\CartController@store')->name('addToCart');
+    });
+});
