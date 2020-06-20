@@ -13,18 +13,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('/loadmin', function () {
+    return view('admin.pages.login.login');
+});
+Route::get('/cliadmin', function () {
+    return view('site.pages.login.accounts');
+});
+
+
+Route::get('/', 'Site\DashboardController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+Auth::routes();
 Route::group([
     'prefix' => 'admin',
     'name' => 'admin',
     'namespace' => 'Admin',
 ], function () {
     
-    Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+    Route::get('/', 'AdminController@index')->name('admin');
+    Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('login');
+    Route::post('/login', 'Auth\AdminLoginController@login')->name('login.submit');
 
+    Route::get('/', 'AdminController@index')->name('admin.dashboard');
+    Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+    
     Route::resource('client', 'ClientController');
 });
 
 
-Auth::routes();
-Route::get('/', 'Site\DashboardController@index')->name('home');
-// Route::get('/home', 'HomeController@index')->name('home');

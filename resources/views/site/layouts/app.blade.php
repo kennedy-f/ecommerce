@@ -64,7 +64,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     @include('site/layouts/header')
 
     {{-- Banner --}}
-    @include('site/layouts/banner')
+    @if (isset($banner))
+        @include('site/layouts/banner')
+    @endif
 
     @yield('content')
 
