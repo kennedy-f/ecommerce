@@ -16,7 +16,7 @@ class ClientController extends Controller
      */
     public function index()
     {
-        $this->data['clients'] = Client::paginate(8);
+        $this->data['clients'] = Client::paginate(10);
         return view('admin\pages\client\index',$this->data);
     }
 

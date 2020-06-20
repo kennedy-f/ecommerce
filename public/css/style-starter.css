@@ -5631,6 +5631,8 @@ button.bg-dark:focus {
 .min-vw-100 {
   min-width: 100vw !important; }
 
+.min-vh-75 {
+  min-height: 75vh !important; }
 .min-vh-85 {
   min-height: 85vh !important; }
 
