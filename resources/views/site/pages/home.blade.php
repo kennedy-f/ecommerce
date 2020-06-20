@@ -183,6 +183,7 @@
 <div class="c-btm">
     <div class="content-top1">
         <div class="container">
+            {{-- @dd($products) --}}
             @for($var = 0; $var < 4; $var ++)
                 <div class="col-md-3 col-md2 animated wow fadeInLeft" data-wow-delay=".5s">
                     <div class="col-md1 simpleCart_shelfItem">
@@ -192,7 +193,7 @@
                         <h3><a href="single.html">{{ $products[$var]['product_name'] }}</a></h3>
                         <div class="price">
                             <h5 class="item_price">${{ number_format($products[$var]['priceper'], 2, ',', '.') }}</h5>
-                            <a href="#" class="item_add">Add To Cart</a>
+                            <a href="{{ route('site.addToCart', $products[$var]->id)}}" class="item_add">Add To Cart</a>
                             <div class="clearfix"> </div>
                         </div>
 

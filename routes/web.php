@@ -18,7 +18,7 @@ Route::group([
     'name' => 'admin',
     'namespace' => 'Admin',
 ], function () {
-    
+
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
     Route::resource('client', 'ClientController');
@@ -26,6 +26,7 @@ Route::group([
 Route::prefix('/')->group(function() {
     Route::name('site.')->group(function() {
         Route::get('/', 'Site\HomeController@index')->name('home');
+        Route::get('/cart/add/{id}', 'Site\CartController@store')->name('addToCart');
     });
 });
 

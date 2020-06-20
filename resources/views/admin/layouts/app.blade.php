@@ -30,13 +30,19 @@ Author URL: http://w3layouts.com
         <!-- main content start -->
         <div class="main-content">
             <!-- content -->
-            <div class="container-fluid content-top-gap min-vh-85">
-
+            <div class="container-fluid content-top-gap min-vh-85 d-flex">
                 <!-- // Breadc  umb -->
-                @yield('breadcrumb')
+                <div class="row col-12">
+                    @yield('breadcrumb')
 
-                <!-- //content -->
-                @yield('content')
+
+                    <!-- //content -->
+
+                        @yield('content')
+                    
+
+                </div>
+
 
             </div>
 

@@ -8,11 +8,11 @@
 			<div class="col-sm-4 world animated wow fadeInRight" data-wow-delay=".5s">
 					<div class="cart box_1">
 						<a href="checkout.html">
-						<h3> <div class="total">
+						<h3> <div class="totala">
 							<span class="simpleCart_total"></span></div>
 							<img src="images/cart.png" alt=""/></h3>
 						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+						<p><a href="javascript:;" class="simpleCart_empty">Empty Carta</a></p>
 
 					</div>
 			</div>
@@ -51,6 +51,7 @@
                                     Women
                                     <!--<span class="caret">  </span>-->
                                 </a>
+                                {{-- needs to be fixed  --}}
 								{{-- <div class="dropdown-menu mega-dropdown-menu">
 									<div class="container-fluid">
 										<!-- Tab panes -->
